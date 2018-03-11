@@ -1,0 +1,54 @@
+ <!-- 安装Git
+在桌面创建一个文件夹myapp
+cd 拖动文件夹
+命令行引入到myapp路径下
+使用 $touch index.html & touch app.js创建两个文件
+git init 初始化仓库 
+git config --global user.name ‘Henry Wu' 配置仓库信息的用户名
+git config --global user.email ‘27732357@qq.com' 配置仓库信息的Email
+git add index.html  添加文件 
+git status             查看状态
+git rm --cached index.html   移除index.html文件
+git status             查看状态
+git *.html              添加所有以.html结尾的文件
+git status             查看状态
+git rm --cached index.html   移除index.html文件
+git add .                添加所有文件
+git status             查看状态
+修改一下html中的文件, 然后在查看状态
+git status             查看状态
+git add .                添加所有文件
+git status             查看状态
+git commit           提交文件
+进入备注状态  输入i之后可以编辑 输入对应的备注信息 之后使用:wq保存退出
+git status             查看状态
+修改一下app.js然后保存 
+git status             查看状态
+git add .                添加所有文件
+git commit -m ‘changed app.js’  提交并备注状态
+==========================================
+touch .gitignore  // 在当前myapp文件下添加文件
+touch log.txt      // 在里面随便写点内容 
+在.gitignore中 写上 log.txt 表示忽略当前文件
+git add .                添加所有文件
+git status             查看状态
+在my app文件下创建一个文件夹dir1 dir2并且在里面分别创建两个js文件,例如app1.js app2.js
+在.gitignore中 换行写上  /dir2 表示忽略当前文件
+git branch login    创建分支
+git status             查看状态
+git commit -m ‘another changed’  提交并备注状态
+git checkout login 检出分支
+touch login.html 创建login.html文件
+git add .                添加所有文件
+git commit -m ‘login form’  提交并备注状态
+git checkout master  回到主线会发现login.html会消失
+git merge login  将login于主线master合并在一起,此时就可以同时出现了
+去github创建账号和密码, 然后在创建一个新的仓库并且配置仓库
+创建仓库后, 查看给与的提示, 并且按照提示的进行操作
+git remote add origin http….. 操作与当前的仓库
+git remote                               查看当前仓库
+git push -u ….                         将代码推送到github远程仓库中. 刷新网页查看!
+创建一个README.md , 用于描述
+=======================================================
+删除分支:git branch -D 分支名
+克隆一个仓库, git clone http… -->
